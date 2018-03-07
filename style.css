@@ -1,1 +1,32 @@
+/* =======================================
+                  FONT
+======================================== */
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,200i,400,400i,700,700i');
+
+@font-face {
+	font-family: 'ITC Mona Lisa Std';
+    src: url('./fonts/MonaLisaStd-Solid.woff2') format('woff2'),
+        url('./fonts/MonaLisaStd-Solid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* =======================================
+                  BODY
+======================================== */
+body{
+	font-family: 'Raleway', serif;
+	text-align: justify;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'ITC Mona Lisa Std', sans-serif;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+
+/* =======================================
+                  AGENDA
+======================================== */
