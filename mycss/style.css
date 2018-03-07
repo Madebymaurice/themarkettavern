@@ -6,8 +6,8 @@
 
 @font-face {
 	font-family: 'ITC Mona Lisa Std';
-    src: url('./fonts/MonaLisaStd-Solid.woff2') format('woff2'),
-        url('./fonts/MonaLisaStd-Solid.woff') format('woff');
+    src: url('../fonts/MonaLisaStd-Solid.woff2') format('woff2'),
+        url('../fonts/MonaLisaStd-Solid.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -21,11 +21,21 @@ body{
 	text-align: justify;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2 {
 	font-family: 'ITC Mona Lisa Std', sans-serif;
 	text-transform: uppercase;
 	font-weight: 200;
 	text-align: center;
+	color:#223d80;
+}
+h3, h4, h5{
+	text-transform: uppercase;
+	text-align:center;
+	font-weight: lighter;
+	color: #000;
+}
+section{
+	
 }
 
 /* =======================================
