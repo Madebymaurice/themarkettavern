@@ -37,6 +37,15 @@ h3, h4, h5{
 section{
 	
 }
+.bg-blue{
+	background: #223d80;
+}
+.bg-blue h1, .bg-blue h2{
+	color: #FFF;
+}
+.bg-beige{
+	background: 
+}
 
 /* =======================================
                   AGENDA
