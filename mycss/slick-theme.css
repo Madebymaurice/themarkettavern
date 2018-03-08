@@ -31,11 +31,18 @@
 
     cursor: pointer;
 
-    color:"#223d80";
-
     border: none;
     outline: none;
     background: transparent;
+}
+.bg_blue .slick-prev,
+.bg_blue .slick-next
+{
+    color: #fcf1df;
+}
+.bg_beige .slick-prev,
+.bg_beige .slick-next{
+    color: #223d80;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -153,13 +160,18 @@
     text-align: center;
 
     opacity: .25;
-    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.bg_blue .slick-dots li button:before
+{
+    color: #fcf1df;
+}
+.bg_beige .slick-dots li button:before{
+    color: #223d80;
+}
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
 }
