@@ -1,16 +1,116 @@
-@import url('http://fonts.googleapis.com/css?family=Oswald');
+/* =======================================
+                  FONT
+======================================== */
 
-body {
-  margin: 0;
-  padding: 0;
-  background-attachment: fixed;
-  background-size: cover;
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,200i,400,400i,700,700i');
+
+@font-face {
+  font-family: 'ITC Mona Lisa Std';
+    src: url('../fonts/MonaLisaStd-Solid.woff2') format('woff2'),
+        url('../fonts/MonaLisaStd-Solid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =======================================
+                  BODY
+======================================== */
+body{
+  font-family: 'Raleway', serif;
+  text-align: justify;
+}
+
+h1, h2 {
+  font-family: 'ITC Mona Lisa Std', sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  text-align: center;
+  color:#223d80;
+}
+h2{
+  font-size: 1.8rem;
+}
+h3, h4, h5{
+  text-transform: uppercase;
+  text-align:center;
+  font-weight: lighter;
+  color: #000;
+}
+.bg_blue{
+  background: #223d80;
+}
+.bg_blue h1, .bg_blue h2{
+  color: #fcf1df;
+}
+.bg_blue h1{
+  border-top:1px solid;
+  border-bottom: 1px solid;
+  display: inline-block;
+  padding: 6px 0 0 0;
+  margin-bottom: 15px;
+}
+.bg_blue h3, .bg_blue h4, .bg_blue h5, .bg_blue p, .bg_blue label, .bg_blue{
+  color: #fff;
+}
+.bg_beige{
+  background: #fcf1df;
+}
+.bg_beige h1, .bg_beige h2{
+  color: #223d80;
+}
+.bg_beige h1{
+  border-top:1px solid;
+  border-bottom: 1px solid;
+  display: inline-block;
+  padding: 6px 0 0 0;
+  margin-bottom: 15px;
 }
 
 /*NAVBAR STARTS***********************************************************/
 
+.clickNav {
+  font-family: 'ITC Mona Lisa Std';
+  font-size: 2em;
+  position: relative;
+}
+
+.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: black;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+.nav-link:hover:before,
+.nav-link:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
 
 /*NAVBAR ENDS*************************************************************/
+
+/*RESERVATION BOUTTON FIX STARTS******************************************/
+
+.boutResa {
+  top: 15px;
+  right: 15px;
+  left: inherit;
+}
+.boutResa{
+  font-family: 'ITC Mona Lisa Std';
+  border-radius: 0;
+  font-size: 2em;
+}
+
+/*RESERVATION BOUTTON FIX ENDS********************************************/
 
 /*VIDEO STARST************************************************************/
 
@@ -26,28 +126,380 @@ body {
 }
 
 video[poster]{
-height:1070px;
-width:100%;
-}
+height:100%;
+width: 100%;
 
-article {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 10px;
 }
 
 .videoLogo {
   position: absolute;
-  top: 60%;
+  top: 37%;
   width: 100%;
-  font-size: 36px;
-  letter-spacing: 3px;
-  color: #fff;
-  font-family: Oswald, sans-serif;
   text-align: center;
 }
 
 /*VIDEO ENDS**************************************************************/
+/*  ========= GENERALS RULES ============ */
+
+/*h1, h2, h3, h4, h5, h6 {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}*/
+
+/*  ====================================== */
+/*  ==============  ICONS  =============== */
+/*  ====================================== */
+
+#myFooter .svg-inline--fa {
+    font-size: 2em;
+    margin: 0 0.2em;
+
+}
+.col-xs-12 {
+    margin-bottom: 1em;
+
+}
+/*  ====================================== */
+/*  ============== RESERVATION =========== */
+/*  ====================================== */
+#reservation {
+    display: flex;
+    text-align: center;
+}
+
+#reservation .row {
+    margin: auto;
+    padding: 2em 0;
+    text-align: center;
+    justify-content: center;
+
+}
+#reservation .row {
+    padding: 0;
+}
+
+#reservation .svg-inline--fa {
+    font-size: 1em;
+    margin: 0 0.2em;
+}
+
+.form-control {
+    background-color:#fcf1df;
+    border-style: dashed;
+    border-width: 2px;
+    border-color:#fcf1df;
+}
+
+.form-control:focus {
+    background-color:#fcf1df
+}
+
+input {
+    width: 100vh;
+}
+
+/*input:hover {
+    background-color: #fcf1df;
+    color: ;
+}*/
+
+/*textarea:hover {
+    background-color: #243c83;
+    color: #fcf1df;
+    transition: color 0.4s
+}*/
+
+.tiboImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.tiboBtn button {
+    margin: 1em;
+}
+
+/*  ====================================== */
+/*  ==============  FOOTER =============== */
+/*  ====================================== */
+footer h2{
+  margin-top:1em;
+}
+footer li {
+    list-style-type: none;
+}
+footer p {
+    margin-bottom: 0;
+}
+footer .row {
+    margin: auto;
+    padding: 2em 0;
+    text-align: center;
+    justify-content: center;
+
+}
+ footer, #reservation p{
+    text-align: center;
+}
+
+footer a {
+    color: #223d80;
+    text-decoration: none;
+    transition: color 0.4s
+}
+
+footer a:hover {
+    color: gold;
+}
+
+.nav-item {
+    font-size: 1.5em;
+    font-family: 'ITC Mona Lisa Std';
+
+}
+.nav.justify-content-center {
+    border-bottom-style: dashed;
+    border-top-style: dashed;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 100%;;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.madeBy {
+    margin-bottom: 0; 
+
+}
+
+
+/*  ====================================== */
+/*  ======= ANIMATION NAV FOOTER ========= */
+/*  ====================================== */
+
+.myAnim a {
+    line-height: 2em;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    perspective: 800px;
+}
+
+.myAnim a {
+    position: relative;
+    display: inline-block;
+    padding: 3px 15px 0;
+
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
+    transition: background 0.6s;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.myAnim a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(34, 61, 128, 0.3);
+    color: #2f4351;
+    content: attr(data-hover);
+    -webkit-transform: rotateX(270deg);
+    -moz-transform: rotateX(270deg);
+    transform: rotateX(270deg);
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+    pointer-events: none;
+}
+
+.myAnim a:hover,
+.myAnim a:focus {
+    background: #223d80;
+}
+
+.myAnim a:hover::before,
+.myAnim a:focus::before {
+    -webkit-transform: rotateX(10deg);  
+    -moz-transform: rotateX(10deg);
+    transform: rotateX(10deg);
+}
+
+
+/*  ====================================== */
+/*  ====  ANINAMTION LIENS UTILES ======== */
+/*  ====================================== */
+#footer ul{
+  padding: 0;
+}
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+/* =======================================
+                  AGENDA
+======================================== */
+#agenda{
+  margin-top:-15px;
+}
+figure.effect-julia {
+  background: #2f3238;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  cursor: pointer;
+}
+
+figure.effect-julia img {
+  opacity: 0.8;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect-julia figcaption {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  padding: 2em;
+}
+
+figure.effect-julia p {
+  display: inline-block;
+  padding: 0.4em 1em;
+  margin:0 0 0.4em 0;
+  background: rgba(255,255,255,0.9);
+  color: #2f3238;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-360px,0,0);
+  transform: translate3d(-360px,0,0);
+}
+
+figure.effect-julia p:first-child {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+figure.effect-julia p:nth-of-type(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+figure.effect-julia:hover img {
+  opacity: 0.4;
+}
+
+figure.effect-julia:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-julia:hover p:first-child {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+figure.effect-julia:hover p:nth-of-type(2) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+#sport h4{
+  text-transform: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.thumbnail{
+     position: relative;
+     height: 320px;
+     width: 330px;
+     overflow: hidden;
+}
+
+.thumbnail img{
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  max-width: inherit;
+  -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+.bg_green_light{
+  background: rgba(54, 164, 32, 0.15);
+  color:#36a420;
+  border-top: 1px solid;
+}
+.bg_green_light:last-child{
+  border-bottom: 1px solid
+}
+.bg_blue_light{
+  background: rgba(34, 61, 128, 0.15);
+  color:#223d80;
+  border-top: 1px solid;
+}
+
+
