@@ -1,0 +1,252 @@
+/*  ========= GENERALS RULES ============ */
+body {
+    background-color: #fcf1df;
+}
+h1, h2, h3, h4, h5, h6 {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+/*  ====================================== */
+/*  ==============  ICONS  =============== */
+/*  ====================================== */
+
+.svg-inline--fa {
+    font-size: 2em;
+    margin: 0 0.2em;
+
+}
+.col-xs-12 {
+    margin-bottom: 1em;
+
+}
+/*  ====================================== */
+/*  ============== RESERVATION =========== */
+/*  ====================================== */
+#reservation {
+    display: flex;
+    text-align: center;
+}
+
+#reservation .row {
+    margin: auto;
+    padding: 2em 0;
+    text-align: center;
+    justify-content: center;
+
+}
+#reservation .row {
+    padding: 0;
+}
+
+#reservation .svg-inline--fa {
+    font-size: 1em;
+    margin: 0 0.2em;
+}
+
+.form-control {
+    background-color: #fcf1df;
+    border-style: dashed;
+    border-width: 2px;
+    border-color:#243c83;
+}
+
+.form-control:focus {
+    background-color:#fcf1df
+}
+
+input {
+    width: 100vh;
+}
+
+input:hover {
+    background-color: #243c83;
+    color: #fcf1df;
+}
+
+textarea:hover {
+    background-color: #243c83;
+    color: #fcf1df;
+    transition: color 0.4s
+}
+
+.tiboImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.tiboBtn button
+ {
+    margin: 1em;
+}
+
+/*  ====================================== */
+/*  ==============  FOOTER =============== */
+/*  ====================================== */
+
+footer {
+    background-color: #223d80;
+    color: #fcf1df;
+}
+footer li {
+    list-style-type: none;
+}
+footer p {
+    margin-bottom: 0;
+}
+footer .row {
+    margin: auto;
+    padding: 2em 0;
+    text-align: center;
+    justify-content: center;
+
+}
+ footer, #reservation p{
+    text-align: center;
+}
+
+footer a {
+    color: #fcf1df;
+    text-decoration: none;
+    transition: color 0.4s
+}
+
+footer a:hover {
+    color: gold;
+}
+
+.nav-item {
+    font-size: 1.5em;
+
+}
+.nav.justify-content-center {
+    border-bottom-style: dashed;
+    border-top-style: dashed;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 100%;;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.madeBy {
+    margin-bottom: 0; 
+
+}
+
+
+/*  ====================================== */
+/*  ======= ANIMATION NAV FOOTER ========= */
+/*  ====================================== */
+
+.myAnim a {
+    line-height: 2em;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    perspective: 800px;
+}
+
+.myAnim a {
+    position: relative;
+    display: inline-block;
+    padding: 3px 15px 0;
+
+    box-shadow: inset 0 3px #2f4351;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
+    transition: background 0.6s;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.myAnim a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fcf1df;
+    color: #2f4351;
+    content: attr(data-hover);
+    -webkit-transform: rotateX(270deg);
+    -moz-transform: rotateX(270deg);
+    transform: rotateX(270deg);
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+    pointer-events: none;
+}
+
+.myAnim a:hover,
+.myAnim a:focus {
+    background: #2f4351;
+}
+
+.myAnim a:hover::before,
+.myAnim a:focus::before {
+    -webkit-transform: rotateX(10deg);  
+    -moz-transform: rotateX(10deg);
+    transform: rotateX(10deg);
+}
+
+
+/*  ====================================== */
+/*  ====  ANINAMTION LIENS UTILES ======== */
+/*  ====================================== */
+
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
