@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../../../favicon.ico">
 
 	<title>The Market Tavern Bordeaux</title>
 
@@ -14,41 +14,224 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
 	<!-- Custom styles for this template -->
-	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 	<!-- Header -->
-
-	<main role="main" class="container">
-		
-		<!-- Section lien rapide -->
-
-
-		<!-- Section presentation -->
-
-
-		<!-- Section Food & Drink -->
-
-
-		<!-- Section Agenda -->
-
-
-		<!-- Section Sport -->
-
-
-		<!-- Section Reservation / Contact -->
-		
-
-    </main><!-- /.container -->
+	<nav class="container navbar navbar-expand-lg navbar-light">
+		<a class="navbar-brand" href="#"><img src="asset/header1.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav ml-auto sexyHover">
+				<a class="nav-item nav-link text-dark clickNav" href="#">Food & Drinks</a>
+				<a class="nav-item nav-link text-dark clickNav" href="#">Agenda</a>
+				<a class="nav-item nav-link text-dark clickNav" href="#">Sport</a>
+				<a class="nav-item nav-link text-dark clickNav" href="#">Presentation</a>
+				<a class="nav-item nav-link text-dark clickNav" href="#">Contact</a>
+			</div>
+		</div>
+	</nav>
 
 
-	<!-- Footer -->
+	<div class="video">
+		<div class="videoLogo">
+			<img src="asset/Logo-white.png">
+		</div>
+
+		<video autoplay="" loop="" class="fillWidth fadeIn animated" poster="asset/gone.jpg" id="video-background gone">
+			<source src="asset/video.mp4" type="video/mp4">Gone to a beer pong challenge!!!!!
+			</video>
+		</div>
+		<div class="boutResa sticky-top"> 
+			<a href="#" class="btn btn-dark btn-lg active resaBout" role="button" aria-pressed="true">Reservation</a>
+		</div>
+		<main role="main" class="container">
+
+			<!-- Section lien rapide -->
+
+
+			<!-- Section presentation -->
+
+
+			<!-- Section Food & Drink -->
+
+
+			<!-- Section Agenda -->
+
+
+			<!-- Section Sport -->
+
+
+			<!-- Section Reservation / Contact -->
+			<section id="reservation">
+				<div class="container-fluid">
+					<h1>Booking</h1>
+
+					<div class="row">
+						<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+							<form action="#"  target="_blank">
+								<fieldset>
+									<div class="row">
+										<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+											<i class="far fa-user"></i><label for="booking">Name : </label>
+											<input type="text" class="form-control" placeholder="Dufour" required>
+										</div>
+										<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+											<i class="fas fa-phone-volume"></i><label for="booking"> Phone number : </label>
+											<input type="text" class="form-control" placeholder="06..." name="mail" required>
+										</div>
+									</div>
+									<div class="row">
+										<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+											<i class="fas fa-envelope-open"></i><label for="booking"> Mail : </label>
+											<input type="text" class="form-control" placeholder="antoine.tison@gmail.com" name="mail" required>
+										</div>
+										<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+											<i class="fas fa-users"></i></br>
+											<label for="booking"> Guest : </label>
+											<select name="select" id="">
+												<option value="">1</option>
+												<option value="">2</option>
+												<option value="">3</option>
+												<option value="">4</option>
+												<option value="">5</option>
+												<option value="">6</option>
+												<option value="">7</option>
+												<option value="">8</option>
+												<option value="">9</option>
+												<option value="">10</option>
+												<option value="">...Call us</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class=" col-xs-12 col-sm-12 col-md-4 col-lg-6 col-xl-6 ">
+											<!--Améliorer pour afficher les heures-->
+											<i class="fas fa-calendar-alt">
+											</i><label for="booking">Booking date : </label>
+											<input type="date" class="form-control" required>
+										</div>
+										<div class=" col-xs-12 col-sm-12 col-md-4 col-lg-6 col-xl-6 ">
+											<!--Améliorer pour afficher les heures-->
+											<i class="far fa-clock"></i>
+											<label for="booking">Booking time : </label>
+											<input type="time" class="form-control" required>
+										</div>
+									</div>
+									<div class="row">
+										<i class="far fa-comment-alt"></i>
+										<label for="bookingcomment">Message (optional) : </label>
+										<textarea class="form-control" rows="3" id="message"></textarea>
+										<div class="tiboBtn">
+											<button type="button" class="btn btn-outline-primary" onclick="alert('Reservation confirmed')">Find a table</button>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+							<div class="tiboImg">
+								<img src="../img/clem-onojeghuo-73768-unsplash.jpg">
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section id="myFooter">
+				<footer>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-3">
+							<div class="map-responsive">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.4784690785127!2d-0.574463884170217!3d44.85255337909849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552879c241f0a7%3A0xb03531d05a62180!2sThe+Market+Tavern!5e0!3m2!1sfr!2sfr!4v1519826420796" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+							<h3>OPENING HOURS</h3>
+							<p>Mon to Fri: 12h20 - 00h00</p>
+							<p>Weekends : 12h00 - 02h00</p>
+							<h3>KITCHEN HOURS</h3>
+							<p>Mon to Fri :</p>
+							<p>12h00 -14h30, 19h00 - 22h00</p>
+							<p>Weekends : </p>
+							<p>12h30 - 15h00, 19h00 - 22h00</p>
+						</div>
+
+
+						<!-- _____________CONTACT __________-->
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+
+							<h3>CONTACT</h3>
+							<a href="https://goo.gl/maps/15Kk41g1VcR2" target="_blank">15 Rue Rode, 33000 Bordeaux</a>
+							<p>05 56 44 09 58</p>
+
+
+							<!-- _____________RESERAUX SOCIAUX __________-->
+							<h3>SOCIAL NETWORK</h3>
+							<div class="col-12">
+								<a href="https://www.tripadvisor.fr/Restaurant_Review-g187079-d8563953-Reviews-The_Market_Tavern-Bordeaux_Gironde_Nouvelle_Aquitaine.html" target="_blank"><i class="fab fa-tripadvisor"></i></a>
+								<a href="https://www.facebook.com/themarkettavernbordeaux/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+								<a href="https://www.instagram.com/explore/locations/594686606/the-market-tavern/" target="_blank"><i class="fab fa-instagram"></i></a>
+							</div>
+						</div>
+						<!-- _____________LIENS UTILES __________-->
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+							<h3>USEFULL LINKS</h3>
+							<ul>
+								<li class="cl-effect-1"><a  href="http://hmsvictorybordeaux.com/" target="_blank">HMS Victory</a></li>
+								<li class="cl-effect-1"><a  href="http://hop-pub.com/" target="_blank">HOP</a></li>
+								<li class="cl-effect-1"><a  href="https://www.lafourchettebordelaise.fr/the-market-tavern-bordeaux/" target="_blank">Lafourchettebordelaise</a></li>
+								<li class="cl-effect-1"><a  href="https://www.youshould.eu/bar/bordeaux/chartrons/the-market-tavern" target="_blank">Youshould</a></li>
+								<li class="cl-effect-1"><a  href="https://www.tripadvisor.fr/Restaurant_Review-g187079-d8563953-Reviews-The_Market_Tavern-Bordeaux_Gironde_Nouvelle_Aquitaine.html" target="_blank">Tripadvisor</a></li>
+								<li class="cl-effect-1"><a  href="http://www.synbud.com/trips/15-adresses-qui-acceptent-les-chiens-a-bordeaux-1" target="_blank">Synbud</a></li>
+								<li class="cl-effect-1"><a  href="https://www.privateaser.com/lieu/2881-the-market-tavern" target="_blank">Privateaser</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- _____________NAVIGATION __________-->
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<div class="hideme">
+								<ul class="nav justify-content-center myAnim">
+									<li class="nav-item">
+										<a class="nav-link active" href="#">Accueil</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Presentation</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Calendar</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Sport</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Booking</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Contact</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<p class="madeBy">Made by Wild Rabbit</p>
+				</section>
+			</footer>		
+
+		</main><!-- /.container -->
+
+
+		<!-- Footer -->
 
 
 
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-</body>
-</html>
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	</body>
+	</html>

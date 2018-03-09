@@ -1,34 +1,45 @@
 <html>
-	<head>
-		<meta content="">
-		<title>TheMarketTavern</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link href="css/style.css" rel="stylesheet">
-	</head>
+
+
+
+<head>
+	<meta content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TheMarketTavern</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet">
+</head>
+<nav class="container navbar navbar-expand-lg navbar-light">
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand logoTitle" href="#"><img src="asset/header1.png"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<a class="navbar-brand" href="#"><img src="asset/header1.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav ml-auto">
-					<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-					<a class="nav-item nav-link" href="#">Food & Drinks</a>
-					<a class="nav-item nav-link" href="#">Agenda</a>
-					<a class="nav-item nav-link" href="#">Sport</a>
-					<a class="nav-item nav-link" href="#">Presentation</a>
-					<a class="nav-item nav-link" href="#">Reservation</a>
-				</div>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav ml-auto sexyHover">
+				<a class="nav-item nav-link text-dark clickNav" href="#">Food & Drinks</a>
+				<a class="nav-item nav-link text-dark clickNav" href="#">Agenda</a>
+				<a class="nav-item nav-link text-dark clickNav" href="#">Sport</a>
+				<a class="nav-item nav-link text-dark clickNav" href="#">Presentation</a>
+				<a class="nav-item nav-link text-dark clickNav" href="#">Contact</a>
 			</div>
-		</nav>
-		<article>
+		</div>
+	</nav>
+		<div class="video">
 			<div class="videoLogo">
-				<img src="asset/Logo.png">
+				<img src="asset/Logo-white.png">
 			</div>
-		</article>
-		<video autoplay="" loop="" class="fillWidth fadeIn animated" poster="asset/gone.jpg" id="video-background gone">
-			<source src="asset/video.mp4" type="video/mp4">Gone to a beer pong challenge!!!!!
-		</video>
-	</body>
+
+			<video autoplay="" loop="" class="fillWidth fadeIn animated" poster="asset/gone.jpg" id="video-background gone">
+				<source src="asset/video.mp4" type="video/mp4">Gone to a beer pong challenge!!!!!
+				</video>
+			</div>
+		<div class="boutResa sticky-top"> 
+			<a href="#" class="btn btn-dark btn-lg active resaBout" role="button" aria-pressed="true">Reservation</a>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
 </html>
