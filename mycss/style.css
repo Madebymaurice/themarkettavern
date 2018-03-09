@@ -59,22 +59,93 @@ h3, h4, h5{
 .bg_beige h1, .bg_beige h2{
 	color: #223d80;
 }
+.bg_beige h1{
+	border-top:1px solid;
+	border-bottom: 1px solid;
+	display: inline-block;
+	padding: 6px 0 0 0;
+	margin-bottom: 15px;
+}
 
 /* =======================================
                   AGENDA
 ======================================== */
+figure.effect-julia {
+	background: #2f3238;
+	position: relative;
+	overflow: hidden;
+	height: auto;
+	cursor: pointer;
+}
 
-/* CSS used here will be applied after bootstrap.css */
-#sport h4{
+figure.effect-julia img {
+	opacity: 0.8;
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-julia figcaption {
+	position: absolute;
+	top: 25%;
+	left: 0;
+	width: 100%;
 	text-align: left;
-	text-transform: none;
+	padding: 2em;
+}
+
+figure.effect-julia p {
 	display: inline-block;
+	padding: 0.4em 1em;
+	margin:0 0 0.4em 0;
+	background: rgba(255,255,255,0.9);
+	color: #2f3238;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-360px,0,0);
+	transform: translate3d(-360px,0,0);
+}
+
+figure.effect-julia p:first-child {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+figure.effect-julia p:nth-of-type(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.effect-julia:hover img {
+	opacity: 0.4;
+}
+
+figure.effect-julia:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-julia:hover p:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+figure.effect-julia:hover p:nth-of-type(2) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+#sport h4{
+	text-transform: none;
 	font-size: 1.2rem;
+	font-weight: 400;
 }
 .thumbnail{
      position: relative;
      height: 320px;
-     width: 320px;
+     width: 330px;
      overflow: hidden;
 }
 
@@ -86,10 +157,23 @@ h3, h4, h5{
 	width: auto;
 	max-width: inherit;
 	-webkit-transform: translate(-50%,-50%);
-	  -ms-transform: translate(-50%,-50%);
 	      transform: translate(-50%,-50%);
 }
 .thumbnail img.portrait {
   width: 100%;
   height: auto;
 }
+.bg_green_light{
+	background: rgba(54, 164, 32, 0.15);
+	color:#36a420;
+	border-top: 1px solid;
+}
+.bg_green_light:last-child{
+	border-bottom: 1px solid
+}
+.bg_blue_light{
+	background: rgba(34, 61, 128, 0.15);
+	color:#223d80;
+	border-top: 1px solid;
+}
+
