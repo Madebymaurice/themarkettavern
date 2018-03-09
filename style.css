@@ -151,7 +151,7 @@ width: 100%;
 /*  ==============  ICONS  =============== */
 /*  ====================================== */
 
-.svg-inline--fa {
+#myFooter .svg-inline--fa {
     font-size: 2em;
     margin: 0 0.2em;
 
@@ -223,7 +223,9 @@ input {
 /*  ====================================== */
 /*  ==============  FOOTER =============== */
 /*  ====================================== */
-
+footer h2{
+  margin-top:1em;
+}
 footer li {
     list-style-type: none;
 }
@@ -348,7 +350,9 @@ footer a:hover {
 /*  ====================================== */
 /*  ====  ANINAMTION LIENS UTILES ======== */
 /*  ====================================== */
-
+#footer ul{
+  padding: 0;
+}
 .cl-effect-1 a::before,
 .cl-effect-1 a::after {
     display: inline-block;
