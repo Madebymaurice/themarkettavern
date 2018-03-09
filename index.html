@@ -9,9 +9,9 @@
 		<link rel="icon" href="../../../../favicon.ico">
 		<title>The Market Tavern Bordeaux</title>
 		<!-- Bootstrap core CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<!-- Custom styles for this template -->
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" type="text/css" href="mycss/slick.css">
 		<link rel="stylesheet" type="text/css" href="mycss/slick-theme.css">
 	</head>
@@ -25,25 +25,27 @@
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav ml-auto sexyHover">
 					<a class="nav-item nav-link text-dark clickNav" href="#">Food & Drinks</a>
-					<a class="nav-item nav-link text-dark clickNav" href="#">Agenda</a>
+					<a class="nav-item nav-link text-dark clickNav" href="#agenda">Agenda</a>
 					<a class="nav-item nav-link text-dark clickNav" href="#">Sport</a>
 					<a class="nav-item nav-link text-dark clickNav" href="#">Presentation</a>
-					<a class="nav-item nav-link text-dark clickNav" href="#">Contact</a>
+					<a class="nav-item nav-link text-dark clickNav" href="#reservation">Contact</a>
 				</div>
 			</div>
 		</nav>
-		<div class="video">
-			<div class="videoLogo">
-				<img src="asset/Logo-white.png">
-			</div>
-			<video autoplay="" loop="" class="fillWidth fadeIn animated" poster="asset/gone.jpg" id="video-background gone">
-				<source src="asset/video.mp4" type="video/mp4">Gone to a beer pong challenge!!!!!
-			</video>
-		</div>
-		<div class="boutResa sticky-top">
+		<div class="boutResa fixed-top">
 			<a href="#" class="btn btn-dark btn-lg active resaBout" role="button" aria-pressed="true">Reservation</a>
 		</div>
+		
+		
 		<main role="main">
+			<div class="video">
+				<div class="videoLogo">
+					<img src="asset/Logo-white.png">
+				</div>
+				<video autoplay="" loop="" class="fillWidth fadeIn animated" poster="asset/gone.jpg" id="video-background gone">
+					<source src="asset/video.mp4" type="video/mp4">Gone to a beer pong challenge!!!!!
+				</video>
+			</div>
 			<!-- Section lien rapide -->
 			<!-- Section presentation -->
 			<!-- Section Food & Drink -->
@@ -348,16 +350,16 @@
 				</div>
 			</section>
 			<!-- Section Reservation / Contact -->
-			<section id="reservation">
-				<div class="container-fluid">
-					<h1>Booking</h1>
+			<section id="reservation" class="bg_blue pt-4 pb-4">
+				<div class="container">
+					<div class="text-center"><h1>Booking</h1></div>
 					<div class="row">
 						<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
 							<form action="#"  target="_blank">
 								<fieldset>
 									<div class="row">
 										<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-											<i class="far fa-user"></i><label for="booking">Name : </label>
+											<i class="fas fa-user"></i><label for="booking">Name : </label>
 											<input type="text" class="form-control" placeholder="Dufour" required>
 										</div>
 										<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
@@ -390,13 +392,11 @@
 									</div>
 									<div class="row">
 										<div class=" col-xs-12 col-sm-12 col-md-4 col-lg-6 col-xl-6 ">
-											<!--Améliorer pour afficher les heures-->
 											<i class="fas fa-calendar-alt">
 											</i><label for="booking">Booking date : </label>
 											<input type="date" class="form-control" required>
 										</div>
 										<div class=" col-xs-12 col-sm-12 col-md-4 col-lg-6 col-xl-6 ">
-											<!--Améliorer pour afficher les heures-->
 											<i class="far fa-clock"></i>
 											<label for="booking">Booking time : </label>
 											<input type="time" class="form-control" required>
@@ -415,14 +415,14 @@
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 							<div class="tiboImg">
-								<img src="../img/clem-onojeghuo-73768-unsplash.jpg">
+								<img src="img/clem-onojeghuo-73768-unsplash.jpg">
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="myFooter">
-				<footer>
+			<section>
+				<footer id="myFooter" class="bg_beige pt-4 pb-4">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-3">
 							<div class="map-responsive">

@@ -1,17 +1,75 @@
-body {
-  width: 100%;
-   background-color: #fcf1df;
-}
+/* =======================================
+                  FONT
+======================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,200i,400,400i,700,700i');
 
 @font-face {
-      font-family: 'MonaLisa';
-      src: url('../asset/MonaLisaStd-Solid.otf');
+  font-family: 'ITC Mona Lisa Std';
+    src: url('fonts/MonaLisaStd-Solid.woff2') format('woff2'),
+        url('fonts/MonaLisaStd-Solid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =======================================
+                  BODY
+======================================== */
+body{
+  font-family: 'Raleway', serif;
+  text-align: justify;
+}
+
+h1, h2 {
+  font-family: 'ITC Mona Lisa Std', sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  text-align: center;
+  color:#223d80;
+}
+h2{
+  font-size: 1.8rem;
+}
+h3, h4, h5{
+  text-transform: uppercase;
+  text-align:center;
+  font-weight: lighter;
+  color: #000;
+}
+.bg_blue{
+  background: #223d80;
+}
+.bg_blue h1, .bg_blue h2{
+  color: #fcf1df;
+}
+.bg_blue h1{
+  border-top:1px solid;
+  border-bottom: 1px solid;
+  display: inline-block;
+  padding: 6px 0 0 0;
+  margin-bottom: 15px;
+}
+.bg_blue h3, .bg_blue h4, .bg_blue h5, .bg_blue p, .bg_blue label, .bg_blue{
+  color: #fff;
+}
+.bg_beige{
+  background: #fcf1df;
+}
+.bg_beige h1, .bg_beige h2{
+  color: #223d80;
+}
+.bg_beige h1{
+  border-top:1px solid;
+  border-bottom: 1px solid;
+  display: inline-block;
+  padding: 6px 0 0 0;
+  margin-bottom: 15px;
 }
 
 /*NAVBAR STARTS***********************************************************/
 
 .clickNav {
-  font-family: 'MonaLisa';
+  font-family: 'ITC Mona Lisa Std';
   font-size: 2em;
   position: relative;
 }
@@ -41,10 +99,14 @@ body {
 
 /*RESERVATION BOUTTON FIX STARTS******************************************/
 
-.resaBout {
-  font-family: 'MonaLisa';
-  width: 150px;
-  border-radius: 1px;
+.boutResa {
+  top: 15px;
+  right: 15px;
+  left: inherit;
+}
+.boutResa{
+  font-family: 'ITC Mona Lisa Std';
+  border-radius: 0;
   font-size: 2em;
 }
 
@@ -79,11 +141,11 @@ width: 100%;
 /*VIDEO ENDS**************************************************************/
 /*  ========= GENERALS RULES ============ */
 
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     margin: 1em;
-}
+}*/
 
 /*  ====================================== */
 /*  ==============  ICONS  =============== */
@@ -123,10 +185,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-control {
-    background-color: #fcf1df;
+    background-color:#fcf1df;
     border-style: dashed;
     border-width: 2px;
-    border-color:#243c83;
+    border-color:#fcf1df;
 }
 
 .form-control:focus {
@@ -137,16 +199,16 @@ input {
     width: 100vh;
 }
 
-input:hover {
-    background-color: #243c83;
-    color: #fcf1df;
-}
+/*input:hover {
+    background-color: #fcf1df;
+    color: ;
+}*/
 
-textarea:hover {
+/*textarea:hover {
     background-color: #243c83;
     color: #fcf1df;
     transition: color 0.4s
-}
+}*/
 
 .tiboImg img{
     width: 100%;
@@ -162,10 +224,6 @@ textarea:hover {
 /*  ==============  FOOTER =============== */
 /*  ====================================== */
 
-footer {
-    background-color: #223d80;
-    color: #fcf1df;
-}
 footer li {
     list-style-type: none;
 }
@@ -184,7 +242,7 @@ footer .row {
 }
 
 footer a {
-    color: #fcf1df;
+    color: #223d80;
     text-decoration: none;
     transition: color 0.4s
 }
@@ -239,7 +297,6 @@ footer a:hover {
     display: inline-block;
     padding: 3px 15px 0;
 
-    box-shadow: inset 0 3px #2f4351;
     -webkit-transition: background 0.6s;
     -moz-transition: background 0.6s;
     transition: background 0.6s;
@@ -260,7 +317,7 @@ footer a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fcf1df;
+    background:rgba(34, 61, 128, 0.3);
     color: #2f4351;
     content: attr(data-hover);
     -webkit-transform: rotateX(270deg);
@@ -277,7 +334,7 @@ footer a:hover {
 
 .myAnim a:hover,
 .myAnim a:focus {
-    background: #2f4351;
+    background: #223d80;
 }
 
 .myAnim a:hover::before,
@@ -326,3 +383,118 @@ footer a:hover {
     -moz-transform: translateX(0px);
     transform: translateX(0px);
 }
+
+/* =======================================
+                  AGENDA
+======================================== */
+#agenda{
+  margin-top:-15px;
+}
+figure.effect-julia {
+  background: #2f3238;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  cursor: pointer;
+}
+
+figure.effect-julia img {
+  opacity: 0.8;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect-julia figcaption {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  padding: 2em;
+}
+
+figure.effect-julia p {
+  display: inline-block;
+  padding: 0.4em 1em;
+  margin:0 0 0.4em 0;
+  background: rgba(255,255,255,0.9);
+  color: #2f3238;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-360px,0,0);
+  transform: translate3d(-360px,0,0);
+}
+
+figure.effect-julia p:first-child {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+figure.effect-julia p:nth-of-type(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+figure.effect-julia:hover img {
+  opacity: 0.4;
+}
+
+figure.effect-julia:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-julia:hover p:first-child {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+figure.effect-julia:hover p:nth-of-type(2) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+#sport h4{
+  text-transform: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.thumbnail{
+     position: relative;
+     height: 320px;
+     width: 330px;
+     overflow: hidden;
+}
+
+.thumbnail img{
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  max-width: inherit;
+  -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+.bg_green_light{
+  background: rgba(54, 164, 32, 0.15);
+  color:#36a420;
+  border-top: 1px solid;
+}
+.bg_green_light:last-child{
+  border-bottom: 1px solid
+}
+.bg_blue_light{
+  background: rgba(34, 61, 128, 0.15);
+  color:#223d80;
+  border-top: 1px solid;
+}
+
+
