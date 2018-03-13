@@ -392,9 +392,6 @@ footer a:hover {
 /* =======================================
                   AGENDA
 ======================================== */
-#agenda{
-  margin-top:-15px;
-}
 figure.effect-julia {
   background: #2f3238;
   position: relative;
@@ -502,4 +499,29 @@ figure.effect-julia:hover p:nth-of-type(2) {
   border-top: 1px solid;
 }
 
+/* =======================================
+             MEDIA QUERIES
+======================================== */
 
+@media (max-width: 1199px) {
+  .thumbnail{width: 270px; height: 270px;}
+}
+@media (max-width: 992px){
+  .thumbnail{width: 305px; height: 305px;}
+}
+@media (max-width: 767px) {
+  .thumbnail{width: 215px; height: 215px;}
+}
+@media (max-width: 575px) {
+  .thumbnail{width: 100%; height: 500px;}
+  .my-effect{width: 100%;}
+  .slick-prev{ left: 0; z-index: 10; }
+  .slick-next{ right: 0; }
+}
+@media (max-width: 480px) {
+  .thumbnail{ height: 410px; }
+}
+@media (max-width: 380px) {
+  .thumbnail{height: 310px;}
+  
+}
