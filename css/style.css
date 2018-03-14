@@ -68,13 +68,19 @@ h3, h4, h5{
 
 /*NAVBAR STARTS***********************************************************/
 
+.menu {
+  background: #fcf1df;
+  width: 100%;
+}
+
+
 .clickNav {
   font-family: 'ITC Mona Lisa Std';
   font-size: 2em;
   position: relative;
 }
 
-.nav-link:before {
+.clickNav:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -87,8 +93,8 @@ h3, h4, h5{
   transform: scaleX(0);
   transition: .25s linear;
 }
-.nav-link:hover:before,
-.nav-link:focus:before {
+.clickNav:hover:before,
+.clickNav:focus:before {
   visibility: visible;
   transform: scaleX(1);
 }
@@ -99,20 +105,17 @@ h3, h4, h5{
 
 /*RESERVATION BOUTTON FIX STARTS******************************************/
 
-.boutResa {
-  top: 15px;
-  right: 15px;
-  left: inherit;
-}
 .boutResa{
   font-family: 'ITC Mona Lisa Std';
-  border-radius: 0;
-  font-size: 2em;
 }
 
 /*RESERVATION BOUTTON FIX ENDS********************************************/
 
 /*VIDEO STARST************************************************************/
+.video {
+  position: relative;
+  margin-top: 4%;
+}
 
 #video-background {
   position: fixed;
@@ -133,9 +136,14 @@ width: 100%;
 
 .videoLogo {
   position: absolute;
-  top: 37%;
+  top: 31%;
   width: 100%;
   text-align: center;
+  height: auto;
+}
+
+.logoWhite {
+  width: 30%;
 }
 
 /*VIDEO ENDS**************************************************************/
@@ -502,4 +510,28 @@ figure.effect-julia:hover p:nth-of-type(2) {
   border-top: 1px solid;
 }
 
+/***************MEDIA QUERIES STATS******************************************/
 
+@media screen and (max-width: 812px) {
+  
+  .brandLogo {
+    width: 39%;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  
+  .brandLogo {
+    width: 39%;
+  }
+
+  .video {
+    margin-top: 8%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .video {
+    margin-top: 26%;
+  }
+}
