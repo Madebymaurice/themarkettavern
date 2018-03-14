@@ -15,9 +15,37 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
+		<!-- Header -->
+		<nav class="container-fullwidth fixed-top navbar navbar-expand-lg navbar-light menu">
+			<div class="container">
+			<a class="navbar-brand" href="#"><img class="img-fluid brandLogo" src="asset/header1.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="container collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ml-auto">
+					<a class="nav-item nav-link text-dark clickNav" href="#">Food & Drinks</a>
+					<a class="nav-item nav-link text-dark clickNav" href="#agenda">Agenda</a>
+					<a class="nav-item nav-link text-dark clickNav" href="#sport">Sport</a>
+					<a class="nav-item nav-link text-dark clickNav" href="#presentation">Presentation</a>
+					<a class="nav-item nav-link text-dark clickNav" href="#reservation">Contact</a>
+					<a href="#" class="btn btn-dark btn-lg active boutResa" role="button" aria-pressed="true">Reservation</a>	
+				</div>
+			</div>
+		</nav>
 		
 		<main role="main">
-			<!-- Section presentation -->
+			<div class="video">
+
+				<div class="img-fluid videoLogo">
+					<img class="img-fluid logoWhite" src="asset/Logo-white.png">
+				</div>
+				<video autoplay="" loop="" class="fillWidth fadeIn animated" poster="asset/gone.jpg" id="video-background gone">
+					<source src="asset/video.mp4" type="video/mp4">Gone to a beer pong challenge!!!!!
+				</video>
+			</div>
+			<!-- Section lien rapide -->
+
 			<!-- Section Agenda -->
 			<section id="agenda" class="bg_blue pt-4 pb-4">
 				<div class="container">
@@ -79,11 +107,10 @@
 									<div class="thumbnail">
 										<img class="img-fluid" src="asset/Friday-nights-2.jpg" alt="Market's Mimosa">
 									</div>
-									<figcaption class="text-center mt-1">
-									<p class="m-0">Come and try out best cocktails from 6€ !</p>
+									<figcaption>
+										<p>Come and try out best cocktails from 6€ !</p>
 									</figcaption>
 								</figure>
-								
 							</article>
 						</div>
 						<div class="test">
@@ -94,8 +121,8 @@
 									<div class="thumbnail">
 										<img class="img-fluid" src="asset/ladies-nights-3.jpg" alt="Market's Mimosa">
 									</div>
-									<figcaption class="text-center mt-1">
-									<p class="m-0">Wine & tapas boards for 20€</p>
+									<figcaption>
+										<p>Wine & tapas boards for 20€</p>
 									</figcaption>
 								</figure>
 							</article>
@@ -108,8 +135,8 @@
 									<div class="thumbnail">
 										<img class="img-fluid portrait" src="asset/games.jpg" alt="Market's Mimosa">
 									</div>
-									<figcaption class="text-center mt-1">
-									<p class="m-0">at 20h30 with quiz master Andrew</p>
+									<figcaption>
+										<p>At 20h30 with quiz master Andrew</p>
 									</figcaption>
 								</figure>
 							</article>
