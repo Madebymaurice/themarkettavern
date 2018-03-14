@@ -530,7 +530,7 @@ input {
   margin-top: 1.2em;
   width: 100%;
   background: transparent;
-  color:  #243c83;
+  color:  #f0f0f0;;
   font-size: 1.1em; /*Modif perso*/
   top: 0.6em; /*Modif perso*/
 }
@@ -545,7 +545,7 @@ input {
   padding: 0em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color:  #243c83;
+  color:  #fcf1df;
   pointer-events: none;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -556,7 +556,7 @@ input {
 }
 
 .graphic--shoko { /* Bandes supérieures et inférieurs*/
-  stroke:  #243c83;
+  stroke:  #f0f0f0;
   pointer-events: none;
   stroke-width: 2px;
   top: 1.25em;
@@ -570,14 +570,14 @@ input {
 
 .input__field--shoko:focus + .input__label--shoko,
 .input--filled .input__label--shoko {
-  color:  #243c83;
+  color:  #f0f0f0;
   -webkit-transform: translate3d(0, 3.5em, 0) scale3d(0.85, 0.85, 1);
   transform: translate3d(0, 3.5em, 0) scale3d(0.85, 0.85, 1);
 }
 
 .input__field--shoko:focus ~ .graphic--shoko,
 .input--filled .graphic--shoko {
-  stroke:  #243c83;
+  stroke: #f0f0f0;
   -webkit-transform: translate3d(-66.6%, 0, 0);
   transform: translate3d(-66.6%, 0, 0);
 }
