@@ -76,6 +76,7 @@ $(document).ready(function(){
             current_image = $sel.data('image-id');
             $('#image-gallery-caption').text($sel.data('caption'));
             $('#image-gallery-image').attr('src', $sel.data('image'));
+            console.log($sel.data('image'));
             disableButtons(counter, $sel.data('image-id'));
         }
 

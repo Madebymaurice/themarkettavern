@@ -254,7 +254,7 @@ footer .svg-inline--fa {
 }
 
 .grid figure figcaption,
-.grid figure figcaption > a {
+.grid figure figcaption > a, .hidder > a {
   position: absolute;
   top: 0;
   left: 0;
@@ -264,7 +264,7 @@ footer .svg-inline--fa {
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.grid figure figcaption > a {
+.grid figure figcaption > a , .hidder > a{
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
@@ -462,6 +462,7 @@ input {
     margin: 1em;
     background-color: #fcf1df;
     color: #243c83;
+    line-height: 60px;
 }
 #reservation button:before{
   content: "";
@@ -469,11 +470,19 @@ input {
   width: 130px;
   height: 60px;
   display: inline-block;
+  transition: -webkit-transform 0.20s;
+  transition: transform 0.20s;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+#reservation button:hover:before{
+  -webkit-transform: translate3d(15px,0,0);
+  transform: translate3d(15px,0,0);
 }
 #reservation button:hover {
-    justify-content: center;
-    color:gold;
+    color:#1d2124
 }
+
  .guest {
   padding-top: 1em;
 
@@ -653,7 +662,7 @@ footer a {
 }
 
 footer a:hover {
-    color: gold;
+    color: #1d2124;
 }
 footer ul {
   padding-left: initial;
@@ -933,9 +942,10 @@ figure.effect-julia:hover p:nth-of-type(2) {
   .thumbnail{width: 215px; height: 215px;}
 }
 @media screen and (max-width: 667px) {
+  .navbar-brand{width: 75%;}
   .brandLogo{width: 100%;}
   .video { margin-top: 8%;}
-  section{padding-top:9rem;}
+  section{padding-top:6rem;}
   #reservation button{ margin:1rem 0; }
 }
 @media (max-width: 575px) {
@@ -946,13 +956,9 @@ figure.effect-julia:hover p:nth-of-type(2) {
 }
 @media (max-width: 480px) {
   .thumbnail{ height: 410px; }
+  #reservation button:before{ display: none; }
 }
 @media (max-width: 380px) {
-  .thumbnail{height: 310px;}
-  
-}
-@media screen and (max-width: 375px) {
-  .video {
-    margin-top: 26%;
-  }
+  .thumbnail{height: 250px;}
+  .video { margin-top: 26%;}
 }
