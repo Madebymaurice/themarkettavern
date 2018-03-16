@@ -36,6 +36,9 @@ h3, h4, h5{
   font-weight: lighter;
   color: #000;
 }
+section{
+  padding-top:7rem;
+}
 .bg_blue{
   background: #223d80;
 }
@@ -147,15 +150,42 @@ width: 100%;
 .logoWhite {
   width: 30%;
 }
+/*  ====================================== */
+/*  ==========  PRESENTATION  ============ */
+/*  ====================================== */
 
-/*VIDEO ENDS**************************************************************/
-/*  ========= GENERALS RULES ============ */
+#presentation{
+  margin-top:-10px;
+}
+#presentation .img-fluid {
+    max-width: 100%;
+    height: 100%;
+}
+.hidder{
+    max-height: 248px;
+    text-align: center; /* On centre l'image dans le div */
+    overflow: hidden; /* Cache les choses qui dépassent du div */
+}
 
-/*h1, h2, h3, h4, h5, h6 {
-    display: flex;
-    justify-content: center;
-    margin: 1em;
-}*/
+/*  ====================================== */
+/*  ================  MENU  ============== */
+/*  ====================================== */
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#MainMenu, #DrinkMenu {
+    max-width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#MainMenu:hover, #DrinkMenu:hover {opacity: 0.7;}
+
 
 /*  ====================================== */
 /*  ==============  ICONS  =============== */
@@ -426,10 +456,12 @@ input {
 }
 
 #reservation button {
+    font-family: 'ITC Mona Lisa Std', sans-serif;
+    font-size: 2rem;
     justify-content: center;
     margin: 1em;
-    background-color: #2db300;
-    color: #fcf1df;
+    background-color: #fcf1df;
+    color: #243c83;
 }
 #reservation button:before{
   content: "";
@@ -441,7 +473,6 @@ input {
 #reservation button:hover {
     justify-content: center;
     margin: 1em;
-    background-color: #243c83;
     color:gold;
 }
  .guest {
